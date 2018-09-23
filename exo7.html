@@ -7,33 +7,47 @@
   </head>
   <body>
 
+  <form method="post" action="Monpremierformulaire">
     <div id="divup">
       <span id="divuprelative">Votre identité</span>
-      <ol>
-        <li>Nom :</li>
-        <li>Prénom :</li>
-        <li>Adresse :</li>
-      </ol>
-    </div>
+    <fieldset>
+      <label for="Nom">1. Nom :</label>
+      <input type="text" name="Nom" id="Nom"><br />
+      <label for="Prénom">1. Prénom :</label>
+      <input type="text" name="Prénom" id="Prénom"><br />
+      <label for="Adressemail">1. Adresse e-mail :</label>
+      <input type="text" name="Adressemail" id="Adressemail"><br />
+    </fieldset>
 
     <div id="divmid">
       <span id="divmidrelative">Adresse de livraison</span>
-      <ol>
-        <li>Adresse :</li>
-        <li>Code postal :</li>
-        <li>Ville :</li>
-      </ol>
-    </div>
+      <fieldset>
+        <label for="Adresse">1. Adresse :</label>
+        <input type="text" name="Adresse" id="Adresse"><br />
+        <label for="Codepostal">1. Code postal :</label>
+        <input type="text" name="Codepostal" id="Codepostal"><br />
+        <label for="Ville">1. Ville :</label>
+        <input type="text" name="Ville" id="Ville"><br />
+      </fieldset>
 
-    <div id="divdown">
-      <span id="divdownrelative">Informations de réglement</span>
-      <ol>
-        <li>Type de carte bancaire :</li>
-        <li>Numéro de carte :</li>
-        <li>Code de sécurité :</li>
-        <li>Nom du titulaire :</li>
-      </ol>
+      <div id="divdown">
+        <span id="divdownrelative">Informations de réglement</span><br/>
+        <fieldset>
+          1. Type de carte bancaire :<br/>
+          <input type="checkbox" name="CB" value="VISA" id="info">
+          <label for="info">VISA</label><br/>
+          <input type="checkbox" name="CB" value="Mastercard" id="info">
+          <label for="info">VISA</label><br/>
+          <label for="ncard">1. Numéro de carte :</label>
+          <input type="text" name="ncard" id="ncard"><br />
+          <label for="codesecu">1. Code de sécurité :</label>
+          <input type="text" name="codesecu" id="codesecu"><br />
+          <label for="nomtitu">1. Nom du titulaire :</label>
+          <input type="text" name="nomtitu" id="nomtitu"><br />
+        </fieldset>
   </div>
-  
+
+  <input style="submit" value="J'achète">
+
   </body>
 </html>
